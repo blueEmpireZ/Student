@@ -55,9 +55,4 @@ public class Card {
       int st=(int)(1+Math.random()*(4-1));
       return st;
    }
-   
-      
-   
-   
-    
 }
