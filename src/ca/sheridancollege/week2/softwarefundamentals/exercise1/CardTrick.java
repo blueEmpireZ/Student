@@ -6,6 +6,7 @@
  * and open the template in the editor.
  */
 package ca.sheridancollege.week2.softwarefundamentals.exercise1;
+import java.util.Scanner;
 
 /**
  * A class that fills a magic hand of 7 cards with random Card Objects
@@ -18,6 +19,7 @@ public class CardTrick {
     
     public static void main(String[] args)
     {
+         Scanner inp=new Scanner(System.in);
         Card[] magicHand = new Card[7];
         
         for (int i=0; i<magicHand.length; i++)
