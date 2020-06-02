@@ -29,19 +29,18 @@ public class CardTrick {
             System.out.println(magicHand[i].getValue()+"  "+magicHand[i].getSuit());
         }
         
-        Scanner in = new Scanner(System.in);
-        int val;
-        String su;
-        System.out.println("Enter the Card value( 1- 13)");//insert code to ask the user for Card value and suit, create their card
-        val = in.nextInt();
-        System.out.println("Enter the Card Suit(Hearts, Diamonds, Spades , Clubs)");
-        su = in.next();
+        Card luckyCard= new Card();
+        luckyCard.setValue(5);
+        luckyCard.setSuit("Clubs");
+        System.out.println("Lucky card has the value "+luckyCard.getValue()+" and suit "+luckyCard.getSuit());  //creating luckyCard
+            
         
         int flag=0;
         for(i=0;i<magicHand.length;i++){       
-        if(magicHand[i].getValue() == val){ 
-                if(magicHand[i].getSuit().equals(su)==true){            // and search magicHand here
-         System.out.println("Your card is found on the magic hand");     //Then report the result here
+        if(magicHand[i].getValue() == luckyCard.getValue()){ 
+                if(magicHand[i].getSuit().equals(luckyCard.getSuit())==true){            // and search in luckyCard here
+         System.out.println("Your luckyCard is found on the magic hand"); 
+         Systemn.out.println("You win");                           //  Then report the result here
          flag=1;
          break;
                 }
@@ -49,7 +48,8 @@ public class CardTrick {
         }
         
         if(flag==0){
-         System.out.println("Your card is not found in the magic hand");
+         System.out.println("Your luckyCard is not found in the magic hand");
+         System.out.println("You lose");
         }
     }
     
