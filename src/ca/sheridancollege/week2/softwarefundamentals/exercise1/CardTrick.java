@@ -40,7 +40,7 @@ public class CardTrick {
         if(magicHand[i].getValue() == luckyCard.getValue()){ 
                 if(magicHand[i].getSuit().equals(luckyCard.getSuit())==true){            // and search in luckyCard here
          System.out.println("Your luckyCard is found on the magic hand"); 
-         Systemn.out.println("You win");                           //  Then report the result here
+         System.out.println("You win");                           //  Then report the result here
          flag=1;
          break;
                 }
